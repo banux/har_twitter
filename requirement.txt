@@ -1,0 +1,4 @@
+gems:
+
+jnunemaker-twitter
+eventmachine
