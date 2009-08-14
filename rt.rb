@@ -12,7 +12,7 @@ httpauth = Twitter::HTTPAuth.new(user, passwd)
 base = Twitter::Base.new(httpauth)
 
 EM.run do
-   EM.add_periodic_timer(2) do
+   EM.add_periodic_timer(60) do
     if last_id == 0
       res = Twitter::Search.new('#har2009').fetch().results
     else
