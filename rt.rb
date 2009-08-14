@@ -21,7 +21,7 @@ EM.run do
     if (res.size > 0)
     last_id = res.first.id    
     res.each do |t|
-      if(t.from_user != "har2009")
+      if(t.from_user != user)
           base.update("RT @" + t.from_user + " " + t.text)       
       end 
     end
